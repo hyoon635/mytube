@@ -1,8 +1,16 @@
+html, body {
+  height: 100%; }
+
 body .container {
   padding: 0;
   margin: 0;
-  max-width: 100%; }
+  max-width: 100%;
+  height: 100%; }
   body .container header nav {
     height: 56px;
     width: 100%;
     background-color: #ffeeff; }
+  body .container .side-nav {
+    width: 250px;
+    height: 100%;
+    background-color: #f5f5f5; }
