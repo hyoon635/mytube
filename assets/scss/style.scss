@@ -44,50 +44,33 @@ body {
                     }
                 }
 
-                .search-wrapper {
+                form {
                     display: flex;
+                    justify-content: center;
+                    flex-direction: column;
+                    align-items: center;
 
-                    form {
-                        flex: 1;
-
-                        // display: flex;
-                        // justify-content: center;
-                        // flex-direction: column;
-                        // align-items: center;
-
-                        .search-input {
+                    .input-group {
+                        .keyboard-icon {
+                            float: right;
                             position: relative;
-                            display: inline-block;
-                            width: 80%;
+                            top: 5px;
+                            right: 35px;
 
-                            &::after {
-                                display: block;
-                                content: '';
-                                clear: both;
-                            }
-
-                            input {
-                                width: 100%;
-                            }
-
-                            .keyboard-icon {
-                                float: right;
-                                position: relative;
-                                bottom: 30px;
-                                right: 15px;
-
-                                img {
-                                    width: 24px;
-                                }
+                            img {
+                                width: 24px;
                             }
                         }
 
-                        .search-button {
-                            width: 60px;
-                            background-color: #f8f8f8;
+                        .input-group-append {
+                            margin-left: -25px;
 
-                            img {
-                                width: 18px;
+                            button {
+                                background-color: #f8f8f8;
+
+                                img {
+                                    width: 20px;
+                                }
                             }
                         }
                     }

@@ -29,32 +29,24 @@ body .container-fluid {
           body .container-fluid header .nav-wrapper ul li .logo {
             width: 80px;
             height: 20px; }
-      body .container-fluid header .nav-wrapper .search-wrapper {
-        display: flex; }
-        body .container-fluid header .nav-wrapper .search-wrapper form {
-          flex: 1; }
-          body .container-fluid header .nav-wrapper .search-wrapper form .search-input {
-            position: relative;
-            display: inline-block;
-            width: 80%; }
-            body .container-fluid header .nav-wrapper .search-wrapper form .search-input::after {
-              display: block;
-              content: '';
-              clear: both; }
-            body .container-fluid header .nav-wrapper .search-wrapper form .search-input input {
-              width: 100%; }
-            body .container-fluid header .nav-wrapper .search-wrapper form .search-input .keyboard-icon {
-              float: right;
-              position: relative;
-              bottom: 30px;
-              right: 15px; }
-              body .container-fluid header .nav-wrapper .search-wrapper form .search-input .keyboard-icon img {
-                width: 24px; }
-          body .container-fluid header .nav-wrapper .search-wrapper form .search-button {
-            width: 60px;
+      body .container-fluid header .nav-wrapper form {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center; }
+        body .container-fluid header .nav-wrapper form .input-group .keyboard-icon {
+          float: right;
+          position: relative;
+          top: 5px;
+          right: 35px; }
+          body .container-fluid header .nav-wrapper form .input-group .keyboard-icon img {
+            width: 24px; }
+        body .container-fluid header .nav-wrapper form .input-group .input-group-append {
+          margin-left: -25px; }
+          body .container-fluid header .nav-wrapper form .input-group .input-group-append button {
             background-color: #f8f8f8; }
-            body .container-fluid header .nav-wrapper .search-wrapper form .search-button img {
-              width: 18px; }
+            body .container-fluid header .nav-wrapper form .input-group .input-group-append button img {
+              width: 20px; }
   body .container-fluid .side-nav {
     width: 250px;
     height: 100%;
