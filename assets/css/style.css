@@ -1,16 +1,40 @@
 html, body {
   height: 100%; }
 
-body .container {
+body .container-fluid {
   padding: 0;
   margin: 0;
-  max-width: 100%;
   height: 100%; }
-  body .container header nav {
-    height: 56px;
+  body .container-fluid header {
+    position: fixed;
     width: 100%;
-    background-color: #ffeeff; }
-  body .container .side-nav {
+    box-shadow: 0px 0px 4px 3px rgba(230, 230, 230, 0.4); }
+    body .container-fluid header .nav-wrapper {
+      height: 56px;
+      padding: 0 16px;
+      width: 100%;
+      background-color: #fff;
+      display: flex; }
+      body .container-fluid header .nav-wrapper ul {
+        list-style: none;
+        line-height: 2.6; }
+        body .container-fluid header .nav-wrapper ul li {
+          display: inline-block;
+          padding-right: 15px; }
+          body .container-fluid header .nav-wrapper ul li .burger-button {
+            color: #a0a0a0;
+            font-size: 22px;
+            cursor: pointer;
+            vertical-align: middle; }
+          body .container-fluid header .nav-wrapper ul li .logo {
+            width: 80px;
+            height: 20px; }
+      body .container-fluid header .nav-wrapper form {
+        display: flex; }
+  body .container-fluid .side-nav {
     width: 250px;
     height: 100%;
+    overflow-y: scroll;
     background-color: #f5f5f5; }
+  body .container-fluid main {
+    background-color: #ffeeff; }
