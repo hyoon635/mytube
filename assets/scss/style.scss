@@ -7,6 +7,9 @@ body {
         padding: 0;
         margin: 0;
         height: 100%;
+        display: grid;
+        grid-template-areas: "header header header" "menu main main";
+        grid-template-columns: 1fr 100%;
 
         //헤더 네비게이션
         header {
@@ -186,6 +189,7 @@ body {
             overflow-y: scroll;
             background-color: #f5f5f5;
             padding-top: 65px;
+            overflow-x: hidden;
 
             section {
                 h6 {
@@ -248,6 +252,7 @@ body {
 
             footer {
                 padding: 30px;
+                padding-bottom: 15px;
 
                 ul {
                     display: flex;
