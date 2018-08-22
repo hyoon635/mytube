@@ -16,6 +16,7 @@ body {
             position: fixed;
             width: 100%;
             box-shadow: 0px 0px 4px 3px rgba(230, 230, 230, 0.4);
+            z-index: 999;
 
             .nav-wrapper {
                 height: 56px;
@@ -190,6 +191,7 @@ body {
             background-color: #f5f5f5;
             padding-top: 65px;
             overflow-x: hidden;
+            position: fixed;
 
             section {
                 h6 {
