@@ -30,38 +30,19 @@ body {
                     li {
                         a {
                             color: unset;
-
-                            .tooltip {
-                                position: absolute;
-                                top: 65px;
-
-                                //right: calc(100% - 100px);
-                                opacity: 0;
-                                transition: opacity 1s;
-
-                                .tooltiptext {
-                                    //visibility: hidden;
-                                    background: rgba(0, 0, 0, 0.5);
-                                    color: #fff;
-                                    font-size: .8rem;
-                                    font-weight: 400;
-                                    padding: 9px;
-                                    border-radius: 2px;
-                                }
-                            }
                         }
 
                         &:hover {
                             .tooltip {
-                                //visibility: visible;
+                                visibility: visible;
                                 opacity: 1;
-                                transition: opacity 1s;
                             }
                         }
                     }
 
                     &.nav-left-area {
                         justify-content: flex-start;
+                        padding-left: 15px;
 
                         li {
                             display: inline-block;
@@ -89,6 +70,30 @@ body {
                             font-size: 1.2rem;
                             padding: 0 15px;
 
+                            &:nth-child(1) {
+                                .tooltip {
+                                    right: 155px;
+                                }
+                            }
+
+                            &:nth-child(2) {
+                                .tooltip {
+                                    right: 140px;
+                                }
+                            }
+
+                            &:nth-child(3) {
+                                .tooltip {
+                                    right: 105px;
+                                }
+                            }
+
+                            &:nth-child(4) {
+                                .tooltip {
+                                    right: 65px;
+                                }
+                            }
+
                             &.profile-img {
                                 img {
                                     width: 32px;
@@ -104,14 +109,17 @@ body {
                     justify-content: center;
                     flex-direction: column;
                     align-items: center;
+                    padding-left: 5%;
 
                     .input-group {
                         width: 100%;
                         height: 30px;
+                        max-width: 640px;
 
                         .form-control {
                             height: unset;
                             border-radius: .15rem;
+                            font-weight: 400;
 
                             &:not(:last-child) {
                                 border-top-right-radius: 0;
@@ -125,6 +133,7 @@ body {
                             position: relative;
                             top: 1px;
                             right: 35px;
+                            z-index: 9;
 
                             img {
                                 width: 18px;
@@ -138,13 +147,33 @@ body {
                                 background-color: #f8f8f8;
                                 width: 65px;
                                 border: 1px solid #ced4da;
-                                border-radius: .15rem;
                                 border-top-left-radius: 0;
                                 border-bottom-left-radius: 0;
+
+                                &.btn:not(:last-child) {
+                                    border-top-right-radius: .15rem;
+                                    border-bottom-right-radius: .15rem;
+                                }
+
+                                &:hover {
+                                    background-color: #f0f0f0;
+                                }
 
                                 img {
                                     width: 18px;
                                     vertical-align: initial;
+                                }
+                            }
+
+                            .tooltip {
+                                top: 60px;
+                                right: 13px;
+                            }
+
+                            &:hover {
+                                .tooltip {
+                                    visibility: visible;
+                                    opacity: 1;
                                 }
                             }
                         }

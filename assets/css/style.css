@@ -23,23 +23,12 @@ body .container-fluid {
         padding: 0; }
         body .container-fluid header .nav-wrapper ul li a {
           color: unset; }
-          body .container-fluid header .nav-wrapper ul li a .tooltip {
-            position: absolute;
-            top: 65px;
-            opacity: 0;
-            transition: opacity 1s; }
-            body .container-fluid header .nav-wrapper ul li a .tooltip .tooltiptext {
-              background: rgba(0, 0, 0, 0.5);
-              color: #fff;
-              font-size: .8rem;
-              font-weight: 400;
-              padding: 9px;
-              border-radius: 2px; }
         body .container-fluid header .nav-wrapper ul li:hover .tooltip {
-          opacity: 1;
-          transition: opacity 1s; }
+          visibility: visible;
+          opacity: 1; }
         body .container-fluid header .nav-wrapper ul.nav-left-area {
-          justify-content: flex-start; }
+          justify-content: flex-start;
+          padding-left: 15px; }
           body .container-fluid header .nav-wrapper ul.nav-left-area li {
             display: inline-block;
             padding-right: 15px; }
@@ -57,6 +46,14 @@ body .container-fluid {
             color: #a0a0a0;
             font-size: 1.2rem;
             padding: 0 15px; }
+            body .container-fluid header .nav-wrapper ul.nav-right-area li:nth-child(1) .tooltip {
+              right: 155px; }
+            body .container-fluid header .nav-wrapper ul.nav-right-area li:nth-child(2) .tooltip {
+              right: 140px; }
+            body .container-fluid header .nav-wrapper ul.nav-right-area li:nth-child(3) .tooltip {
+              right: 105px; }
+            body .container-fluid header .nav-wrapper ul.nav-right-area li:nth-child(4) .tooltip {
+              right: 65px; }
             body .container-fluid header .nav-wrapper ul.nav-right-area li.profile-img img {
               width: 32px;
               border-radius: 50%; }
@@ -64,13 +61,16 @@ body .container-fluid {
         display: flex;
         justify-content: center;
         flex-direction: column;
-        align-items: center; }
+        align-items: center;
+        padding-left: 5%; }
         body .container-fluid header .nav-wrapper form .input-group {
           width: 100%;
-          height: 30px; }
+          height: 30px;
+          max-width: 640px; }
           body .container-fluid header .nav-wrapper form .input-group .form-control {
             height: unset;
-            border-radius: .15rem; }
+            border-radius: .15rem;
+            font-weight: 400; }
             body .container-fluid header .nav-wrapper form .input-group .form-control:not(:last-child) {
               border-top-right-radius: 0;
               border-bottom-right-radius: 0;
@@ -79,7 +79,8 @@ body .container-fluid {
             float: right;
             position: relative;
             top: 1px;
-            right: 35px; }
+            right: 35px;
+            z-index: 9; }
             body .container-fluid header .nav-wrapper form .input-group .keyboard-icon img {
               width: 18px; }
           body .container-fluid header .nav-wrapper form .input-group .input-group-append {
@@ -88,12 +89,22 @@ body .container-fluid {
               background-color: #f8f8f8;
               width: 65px;
               border: 1px solid #ced4da;
-              border-radius: .15rem;
               border-top-left-radius: 0;
               border-bottom-left-radius: 0; }
+              body .container-fluid header .nav-wrapper form .input-group .input-group-append button.btn:not(:last-child) {
+                border-top-right-radius: .15rem;
+                border-bottom-right-radius: .15rem; }
+              body .container-fluid header .nav-wrapper form .input-group .input-group-append button:hover {
+                background-color: #f0f0f0; }
               body .container-fluid header .nav-wrapper form .input-group .input-group-append button img {
                 width: 18px;
                 vertical-align: initial; }
+            body .container-fluid header .nav-wrapper form .input-group .input-group-append .tooltip {
+              top: 60px;
+              right: 13px; }
+            body .container-fluid header .nav-wrapper form .input-group .input-group-append:hover .tooltip {
+              visibility: visible;
+              opacity: 1; }
   body .container-fluid .side-nav {
     width: 250px;
     height: 100%;

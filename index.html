@@ -7,6 +7,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>mytube</title>
 	<link rel="stylesheet" href="assets/css/style.css">
+	<link rel="stylesheet" href="assets/css/variables.css">
 
 	<!-- Bootstrap CSS -->
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
@@ -24,7 +25,7 @@
 		<header>
 			<!-- 네비게이션 영역 -->
 			<nav class="nav-wrapper">
-				<ul class="col-3 nav-left-area">
+				<ul class="col-2 nav-left-area">
 					<li>
 						<span class="burger-button" onclick="openNav()">&#9776</span>
 					</li>
@@ -32,7 +33,7 @@
 						<img src="assets/img/2000px-YouTube_Logo_2017.png" alt="Logo" class="logo">
 					</li>
 				</ul>
-				<form class="col-5">
+				<form class="col-7">
 					<div class="input-group">
 						<input type="text" class="form-control" placeholder="검색">
 						<a href="#" class="keyboard-icon">
@@ -42,45 +43,36 @@
 							<button class="btn btn-outline-secondary" type="button">
 								<img src="assets/img/icons8-search-96.png" alt="search">
 							</button>
+							<div class="tooltip">
+								<span class="tooltiptext">검색</span>
+							</div>
 						</div>
 					</div>
 				</form>
-				<ul class="col-4 nav-right-area">
+				<ul class="col-3 nav-right-area">
 					<li>
-						<a href="#">
-							<i class="fas fa-video">
-								<div class="tooltip">
-									<span class="tooltiptext">동영상 또는 게시물 만들기</span>
-								</div>
-							</i>
-						</a>
+						<a href="#"><i class="fas fa-video"></i></a>
+						<div class="tooltip">
+							<span class="tooltiptext">동영상 또는 게시물 만들기</span>
+						</div>
 					</li>
 					<li>
-						<a href="#">
-							<i class="fas fa-th">
-								<div class="tooltip">
-									<span class="tooltiptext">YouTube 앱</span>
-								</div>
-							</i>
-						</a>
+						<a href="#"><i class="fas fa-th"></i></a>
+						<div class="tooltip">
+							<span class="tooltiptext">YouTube 앱</span>
+						</div>
 					</li>
 					<li>
-						<a href="#">
-							<i class="fas fa-comment">
-								<div class="tooltip">
-									<span class="tooltiptext">메시지</span>
-								</div>
-							</i>
-						</a>
+						<a href="#"><i class="fas fa-comment"></i></a>
+						<div class="tooltip">
+							<span class="tooltiptext">메시지</span>
+						</div>
 					</li>
 					<li>
-						<a href="#">
-							<i class="fas fa-bell">
-								<div class="tooltip">
-									<span class="tooltiptext">알림</span>
-								</div>
-							</i>
-						</a>
+						<a href="#"><i class="fas fa-bell"></i></a>
+						<div class="tooltip">
+							<span class="tooltiptext">알림</span>
+						</div>
 					</li>
 					<li class="profile-img">
 						<a href="#">
