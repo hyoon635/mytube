@@ -14,3 +14,6 @@
     font-weight: 400;
     padding: 9px;
     border-radius: 2px; }
+
+.hide {
+  display: none; }
