@@ -21,3 +21,15 @@
 .hide {
     display: none;
 }
+
+ul {
+    list-style: none;
+}
+
+a {
+    color: unset !important;
+
+    &:hover {
+        text-decoration: none !important;
+    }
+}

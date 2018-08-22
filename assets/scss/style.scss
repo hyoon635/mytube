@@ -8,6 +8,7 @@ body {
         margin: 0;
         height: 100%;
 
+        //헤더 네비게이션
         header {
             position: fixed;
             width: 100%;
@@ -21,17 +22,12 @@ body {
                 display: flex;
 
                 ul {
-                    list-style: none;
                     display: flex;
                     align-items: center;
                     margin-bottom: 0;
                     padding: 0;
 
                     li {
-                        a {
-                            color: unset;
-                        }
-
                         &:hover {
                             .tooltip {
                                 visibility: visible;
@@ -104,6 +100,7 @@ body {
                     }
                 }
 
+                //검색창
                 form {
                     display: flex;
                     justify-content: center;
@@ -182,17 +179,76 @@ body {
             }
         }
 
+        // 사이드 네비게이션
         .side-nav {
-            width: 250px;
+            width: 240px;
             height: 100%;
             overflow-y: scroll;
             background-color: #f5f5f5;
+            padding-top: 65px;
 
-            nav {}
+            section {
+                h6 {
+                    font-size: .9rem;
+                    font-weight: 400;
+                    color: #6c6c6c;
+                    padding: 15px 0 0 30px;
+                }
+
+                ul {
+                    padding-left: 0;
+                    margin-bottom: 0;
+                    border-bottom: 1px solid #eee;
+                    padding-bottom: 16px;
+
+                    a {
+                        li {
+                            width: 250px;
+                            height: 40px;
+                            display: flex;
+                            align-items: center;
+                            font-size: .9rem;
+
+                            i {
+                                color: #888;
+                                text-align: center;
+                                font-size: 1.2rem;
+                                width: 80px;
+                            }
+
+                            &.default {
+                                background-color: #DCDCDC;
+
+                                i {
+                                    color: #EB3223;
+                                }
+                            }
+
+                            &:hover {
+                                background-color: #ebebeb;
+                            }
+                        }
+                    }
+                }
+
+                &.home-section, &.setting-section {
+                    h6 {
+                        display: none;
+                    }
+                }
+
+                &.subscribe-section {
+                    img {
+                        width: 80px;
+                        border-radius: 50%;
+                        padding: 0 28px;
+                    }
+                }
+            }
         }
 
         main {
-            background-color: #ffeeff;
+            background-color: #fafafa;
         }
     }
 }

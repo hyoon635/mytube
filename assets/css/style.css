@@ -16,13 +16,10 @@ body .container-fluid {
       background-color: #fff;
       display: flex; }
       body .container-fluid header .nav-wrapper ul {
-        list-style: none;
         display: flex;
         align-items: center;
         margin-bottom: 0;
         padding: 0; }
-        body .container-fluid header .nav-wrapper ul li a {
-          color: unset; }
         body .container-fluid header .nav-wrapper ul li:hover .tooltip {
           visibility: visible;
           opacity: 1; }
@@ -106,9 +103,43 @@ body .container-fluid {
               visibility: visible;
               opacity: 1; }
   body .container-fluid .side-nav {
-    width: 250px;
+    width: 240px;
     height: 100%;
     overflow-y: scroll;
-    background-color: #f5f5f5; }
+    background-color: #f5f5f5;
+    padding-top: 65px; }
+    body .container-fluid .side-nav section h6 {
+      font-size: .9rem;
+      font-weight: 400;
+      color: #6c6c6c;
+      padding: 15px 0 0 30px; }
+    body .container-fluid .side-nav section ul {
+      padding-left: 0;
+      margin-bottom: 0;
+      border-bottom: 1px solid #eee;
+      padding-bottom: 16px; }
+      body .container-fluid .side-nav section ul a li {
+        width: 250px;
+        height: 40px;
+        display: flex;
+        align-items: center;
+        font-size: .9rem; }
+        body .container-fluid .side-nav section ul a li i {
+          color: #888;
+          text-align: center;
+          font-size: 1.2rem;
+          width: 80px; }
+        body .container-fluid .side-nav section ul a li.default {
+          background-color: #DCDCDC; }
+          body .container-fluid .side-nav section ul a li.default i {
+            color: #EB3223; }
+        body .container-fluid .side-nav section ul a li:hover {
+          background-color: #ebebeb; }
+    body .container-fluid .side-nav section.home-section h6, body .container-fluid .side-nav section.setting-section h6 {
+      display: none; }
+    body .container-fluid .side-nav section.subscribe-section img {
+      width: 80px;
+      border-radius: 50%;
+      padding: 0 28px; }
   body .container-fluid main {
-    background-color: #ffeeff; }
+    background-color: #fafafa; }
