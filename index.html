@@ -11,13 +11,18 @@
 	<!-- Bootstrap CSS -->
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
 
+	<!-- Fontawesome CSS -->
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css">
+
+
+
 </head>
 
 <body>
 	<div class="container-fluid">
 		<header>
 			<nav class="nav-wrapper">
-				<ul class="col-3">
+				<ul class="col-3 nav-left-area">
 					<li>
 						<span class="burger-button" onclick="openNav()">&#9776</span>
 					</li>
@@ -26,18 +31,10 @@
 					</li>
 				</ul>
 				<form class="col-5">
-
-					<!-- <div class="search-input">
-							<input type="text" class="search" placeholder="검색">
-
-						</div>
-						<button class="search-button">
-							<img src="assets/img/icons8-search-96.png" alt="search">
-						</button> -->
 					<div class="input-group">
 						<input type="text" class="form-control" placeholder="검색">
 						<a href="#" class="keyboard-icon">
-							<img src="assets/img/icons8-keyboard-90.png" alt="keyboard">
+							<img src="assets/img/tia.png" alt="keyboard">
 						</a>
 						<div class="input-group-append">
 							<button class="btn btn-outline-secondary" type="button">
@@ -46,7 +43,23 @@
 						</div>
 					</div>
 				</form>
-
+				<ul class="col-4 nav-right-area">
+					<li>
+						<i class="fas fa-video"></i>
+					</li>
+					<li>
+						<i class="fas fa-th"></i>
+					</li>
+					<li>
+						<i class="fas fa-comment"></i>
+					</li>
+					<li>
+						<i class="fas fa-bell"></i>
+					</li>
+					<li class="profile-img">
+						<img src="assets/img/photo.jpg" alt="profile image">
+					</li>
+				</ul>
 			</nav>
 		</header>
 		<section class="side-nav">
