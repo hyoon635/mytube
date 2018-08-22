@@ -19,7 +19,25 @@ body .container-fluid {
         list-style: none;
         display: flex;
         align-items: center;
-        margin-bottom: 0; }
+        margin-bottom: 0;
+        padding: 0; }
+        body .container-fluid header .nav-wrapper ul li a {
+          color: unset; }
+          body .container-fluid header .nav-wrapper ul li a .tooltip {
+            position: absolute;
+            top: 65px;
+            opacity: 0;
+            transition: opacity 1s; }
+            body .container-fluid header .nav-wrapper ul li a .tooltip .tooltiptext {
+              background: rgba(0, 0, 0, 0.5);
+              color: #fff;
+              font-size: .8rem;
+              font-weight: 400;
+              padding: 9px;
+              border-radius: 2px; }
+        body .container-fluid header .nav-wrapper ul li:hover .tooltip {
+          opacity: 1;
+          transition: opacity 1s; }
         body .container-fluid header .nav-wrapper ul.nav-left-area {
           justify-content: flex-start; }
           body .container-fluid header .nav-wrapper ul.nav-left-area li {
@@ -40,7 +58,7 @@ body .container-fluid {
             font-size: 1.2rem;
             padding: 0 15px; }
             body .container-fluid header .nav-wrapper ul.nav-right-area li.profile-img img {
-              width: 30px;
+              width: 32px;
               border-radius: 50%; }
       body .container-fluid header .nav-wrapper form {
         display: flex;
