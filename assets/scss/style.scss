@@ -245,6 +245,32 @@ body {
                     }
                 }
             }
+
+            footer {
+                padding: 30px;
+
+                ul {
+                    display: flex;
+                    flex-wrap: wrap;
+
+                    li {
+                        font-size: .8rem;
+                        font-weight: 500;
+                        color: #888;
+                        margin: 0 3px;
+                    }
+                }
+
+                .copyright {
+                    padding-top: 20px;
+
+                    p {
+                        font-size: .8rem;
+                        font-weight: 500;
+                        color: #6c6c6c;
+                    }
+                }
+            }
         }
 
         main {

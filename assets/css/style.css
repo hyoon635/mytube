@@ -141,5 +141,21 @@ body .container-fluid {
       width: 80px;
       border-radius: 50%;
       padding: 0 28px; }
+    body .container-fluid .side-nav footer {
+      padding: 30px; }
+      body .container-fluid .side-nav footer ul {
+        display: flex;
+        flex-wrap: wrap; }
+        body .container-fluid .side-nav footer ul li {
+          font-size: .8rem;
+          font-weight: 500;
+          color: #888;
+          margin: 0 3px; }
+      body .container-fluid .side-nav footer .copyright {
+        padding-top: 20px; }
+        body .container-fluid .side-nav footer .copyright p {
+          font-size: .8rem;
+          font-weight: 500;
+          color: #6c6c6c; }
   body .container-fluid main {
     background-color: #fafafa; }
