@@ -206,11 +206,12 @@ body .container-fluid {
           padding: 9px 18px;
           border-radius: 2px; }
         body .container-fluid main section .title-area .close {
-          margin-left: 15px;
+          margin: 15px;
           color: #9d9d9d;
           font-size: 1.3rem; }
       body .container-fluid main section .video-list {
-        display: grid; }
+        display: grid;
+        justify-content: space-around; }
         body .container-fluid main section .video-list a {
           width: 210px;
           margin: 20px 0;

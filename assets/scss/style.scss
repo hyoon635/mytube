@@ -331,6 +331,10 @@ body {
                     align-items: center;
                     grid-row-start: 1;
 
+                    //display: grid;
+                    // align-items: center;
+                    // grid-template-columns: repeat(5, auto);
+
                     h6 {
                         margin-bottom: 0;
                         letter-spacing: -0.5px;
@@ -365,7 +369,7 @@ body {
                     }
 
                     .close {
-                        margin-left: 15px;
+                        margin: 15px;
                         color: $c-grey9d;
                         font-size: 1.3rem;
                     }
@@ -373,6 +377,7 @@ body {
 
                 .video-list {
                     display: grid;
+                    justify-content: space-around;
 
                     a {
                         width: 210px;
