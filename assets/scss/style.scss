@@ -1,6 +1,7 @@
 $c-red: #EB3223;
 $c-white: #ffffff;
 $c-grey888: #888888;
+$c-grey9d: #9d9d9d;
 
 html, body {
     height: 100%;
@@ -222,13 +223,14 @@ body {
                     border-bottom: 1px solid #eee;
                     padding-bottom: 16px;
 
-                    a {
-                        li {
-                            width: 250px;
+                    li {
+                        font-size: .9rem;
+
+                        a {
+                            width: 240px;
                             height: 40px;
                             display: flex;
                             align-items: center;
-                            font-size: .9rem;
 
                             i {
                                 color: $c-grey888;
@@ -305,7 +307,7 @@ body {
 
         main {
             background-color: #fafafa;
-            padding: 30px 8% 0;
+            padding: 30px 5% 0;
             grid: {
                 column-start: 2;
                 column-end: 4;
@@ -313,11 +315,22 @@ body {
             };
 
             section {
+                display: grid;
+                grid: {
+                    template-columns: repeat(6, 210px);
+                    template-rows: 40px;
+                    column-gap: 4px;
+                };
                 border-bottom: 1px solid #eee;
 
                 .title-area {
                     display: flex;
                     align-items: center;
+                    grid: {
+                        column-start: 1;
+                        column-end: 7;
+                        row-start: 1;
+                    };
 
                     h6 {
                         margin-bottom: 0;
@@ -354,8 +367,37 @@ body {
 
                     .close {
                         margin-left: 15px;
-                        color: #9d9d9d;
+                        color: $c-grey9d;
                         font-size: 1.3rem;
+                    }
+                }
+
+                .video-wrap {
+                    width: 210px;
+                    display: flex;
+                    flex-direction: column;
+                    margin: 20px 0;
+                    grid-row-start: 2;
+
+                    img {
+                        width: 100%;
+                    }
+
+                    p {
+                        font: {
+                            size: .9rem;
+                            weight: 600;
+                        };
+                        padding-bottom: 5px;
+                    }
+
+                    span {
+                        font-size: .85rem;
+                        color: $c-grey9d;
+
+                        i {
+                            padding-left: 5px;
+                        }
                     }
                 }
             }
