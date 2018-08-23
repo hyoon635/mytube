@@ -1,9 +1,14 @@
-$c-red: #EB3223;
+//path
+$img-path: "../img";
+
+//color
+$c-red: #eb3223;
 $c-white: #ffffff;
 $c-grey888: #888888;
 $c-grey9d: #9d9d9d;
 
-html, body {
+html,
+body {
     height: 100%;
 }
 
@@ -127,7 +132,7 @@ body {
 
                         .form-control {
                             height: unset;
-                            border-radius: .15rem;
+                            border-radius: 0.15rem;
                             font-weight: 400;
 
                             &:not(:last-child) {
@@ -163,8 +168,8 @@ body {
 
                                 &.btn:not(:last-child) {
                                     border: {
-                                        top-right-radius: .15rem;
-                                        bottom-right-radius: .15rem;
+                                        top-right-radius: 0.15rem;
+                                        bottom-right-radius: 0.15rem;
                                     };
                                 }
 
@@ -210,7 +215,7 @@ body {
             section {
                 h6 {
                     font: {
-                        size: .9rem;
+                        size: 0.9rem;
                         weight: 400;
                     };
                     color: #6c6c6c;
@@ -224,7 +229,7 @@ body {
                     padding-bottom: 16px;
 
                     li {
-                        font-size: .9rem;
+                        font-size: 0.9rem;
 
                         a {
                             width: 240px;
@@ -240,7 +245,7 @@ body {
                             }
 
                             &.default {
-                                background-color: #DCDCDC;
+                                background-color: #dcdcdc;
 
                                 i {
                                     color: $c-red;
@@ -258,7 +263,8 @@ body {
                     }
                 }
 
-                &.home-section, &.setting-section {
+                &.home-section,
+                &.setting-section {
                     h6 {
                         display: none;
                     }
@@ -283,7 +289,7 @@ body {
 
                     li {
                         font: {
-                            size: .8rem;
+                            size: 0.8rem;
                             weight: 500;
                         };
                         color: $c-grey888;
@@ -296,7 +302,7 @@ body {
 
                     p {
                         font: {
-                            size: .8rem;
+                            size: 0.8rem;
                             weight: 500;
                         };
                         color: #6c6c6c;
@@ -307,7 +313,7 @@ body {
 
         main {
             background-color: #fafafa;
-            padding: 30px 5% 0;
+            padding: 15px 5% 0;
             grid: {
                 column-start: 2;
                 column-end: 4;
@@ -316,21 +322,13 @@ body {
 
             section {
                 display: grid;
-                grid: {
-                    template-columns: repeat(6, 210px);
-                    template-rows: 40px;
-                    column-gap: 4px;
-                };
+                grid-template-rows: 40px;
                 border-bottom: 1px solid #eee;
 
                 .title-area {
                     display: flex;
                     align-items: center;
-                    grid: {
-                        column-start: 1;
-                        column-end: 7;
-                        row-start: 1;
-                    };
+                    grid-row-start: 1;
 
                     h6 {
                         margin-bottom: 0;
@@ -347,7 +345,7 @@ body {
 
                     span {
                         font: {
-                            size: .8rem;
+                            size: 0.8rem;
                             weight: 400;
                         };
                         color: $c-grey888;
@@ -358,7 +356,7 @@ body {
                         background-color: $c-red;
                         color: $c-white;
                         font: {
-                            size: .8rem;
+                            size: 0.8rem;
                             weight: 400;
                         };
                         padding: 9px 18px;
@@ -372,31 +370,50 @@ body {
                     }
                 }
 
-                .video-wrap {
-                    width: 210px;
-                    display: flex;
-                    flex-direction: column;
-                    margin: 20px 0;
-                    grid-row-start: 2;
+                .video-list {
+                    display: grid;
 
-                    img {
-                        width: 100%;
-                    }
+                    a {
+                        width: 210px;
+                        margin: 20px 0;
+                        grid-row-start: 2;
 
-                    p {
-                        font: {
-                            size: .9rem;
-                            weight: 600;
-                        };
-                        padding-bottom: 5px;
-                    }
+                        .video-wrap {
+                            position: relative;
+                            flex-direction: column;
+                            display: flex;
 
-                    span {
-                        font-size: .85rem;
-                        color: $c-grey9d;
+                            img {
+                                width: 100%;
+                            }
 
-                        i {
-                            padding-left: 5px;
+                            p {
+                                font: {
+                                    size: 0.9rem;
+                                    weight: 600;
+                                };
+                                padding-bottom: 5px;
+                            }
+
+                            span {
+                                font-size: 0.85rem;
+                                color: $c-grey9d;
+
+                                i {
+                                    padding-left: 5px;
+                                }
+
+                                &.time {
+                                    position: absolute;
+                                    top: 45%;
+                                    right: 5px;
+                                    font-size: 0.75rem;
+                                    background-color: rgba(0, 0, 0, 0.8);
+                                    color: $c-white;
+                                    padding: 0 5px;
+                                    border-radius: 2px;
+                                }
+                            }
                         }
                     }
                 }
