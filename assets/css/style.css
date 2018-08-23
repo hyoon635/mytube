@@ -18,7 +18,7 @@ body .container-fluid {
       height: 56px;
       padding: 0 16px;
       width: 100%;
-      background-color: #fff;
+      background-color: #ffffff;
       display: flex; }
       body .container-fluid header .nav-wrapper ul {
         display: flex;
@@ -112,9 +112,9 @@ body .container-fluid {
     overflow-y: scroll;
     background-color: #f5f5f5;
     overflow-x: hidden;
+    padding-top: 10px;
     grid-column-start: 1;
-    grid-row-start: 2;
-    padding-top: 10px; }
+    grid-row-start: 2; }
     body .container-fluid .side-nav section h6 {
       font-size: .9rem;
       font-weight: 400;
@@ -132,7 +132,7 @@ body .container-fluid {
         align-items: center;
         font-size: .9rem; }
         body .container-fluid .side-nav section ul a li i {
-          color: #888;
+          color: #888888;
           text-align: center;
           font-size: 1.2rem;
           width: 80px; }
@@ -159,7 +159,7 @@ body .container-fluid {
         body .container-fluid .side-nav footer ul li {
           font-size: .8rem;
           font-weight: 500;
-          color: #888;
+          color: #888888;
           margin: 0 3px; }
       body .container-fluid .side-nav footer .copyright {
         padding-top: 20px; }
@@ -169,7 +169,37 @@ body .container-fluid {
           color: #6c6c6c; }
   body .container-fluid main {
     background-color: #fafafa;
+    padding: 30px 8% 0;
     grid-column-start: 2;
     grid-column-end: 4;
-    grid-row-start: 2;
-    padding: 30px 8% 0; }
+    grid-row-start: 2; }
+    body .container-fluid main section {
+      border-bottom: 1px solid #eee; }
+      body .container-fluid main section .title-area {
+        display: flex;
+        align-items: center; }
+        body .container-fluid main section .title-area h6 {
+          margin-bottom: 0;
+          letter-spacing: -0.5px;
+          font-weight: 600;
+          margin: 0 10px; }
+        body .container-fluid main section .title-area img {
+          border-radius: 50%;
+          width: 35px;
+          height: 35px; }
+        body .container-fluid main section .title-area span {
+          font-size: .8rem;
+          font-weight: 400;
+          color: #888888; }
+        body .container-fluid main section .title-area .subscription-num {
+          margin-left: auto;
+          background-color: #EB3223;
+          color: #ffffff;
+          font-size: .8rem;
+          font-weight: 400;
+          padding: 9px 18px;
+          border-radius: 2px; }
+        body .container-fluid main section .title-area .close {
+          margin-left: 15px;
+          color: #9d9d9d;
+          font-size: 1.3rem; }
