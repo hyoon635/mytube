@@ -7,7 +7,8 @@ body .container-fluid {
   height: 100%;
   display: grid;
   grid-template-areas: "header header header" "menu main main";
-  grid-template-columns: 1fr 100%; }
+  grid-template-columns: 240px auto 300px;
+  grid-template-rows: 56px; }
   body .container-fluid header {
     position: fixed;
     width: 100%;
@@ -108,12 +109,12 @@ body .container-fluid {
               opacity: 1; }
   body .container-fluid .side-nav {
     width: 240px;
-    height: 100%;
     overflow-y: scroll;
     background-color: #f5f5f5;
-    padding-top: 65px;
     overflow-x: hidden;
-    position: fixed; }
+    grid-column-start: 1;
+    grid-row-start: 2;
+    padding-top: 10px; }
     body .container-fluid .side-nav section h6 {
       font-size: .9rem;
       font-weight: 400;
@@ -139,6 +140,8 @@ body .container-fluid {
           background-color: #DCDCDC; }
           body .container-fluid .side-nav section ul a li.default i {
             color: #EB3223; }
+          body .container-fluid .side-nav section ul a li.default:hover {
+            background-color: #d3d3d3; }
         body .container-fluid .side-nav section ul a li:hover {
           background-color: #ebebeb; }
     body .container-fluid .side-nav section.home-section h6, body .container-fluid .side-nav section.setting-section h6 {
@@ -165,4 +168,8 @@ body .container-fluid {
           font-weight: 500;
           color: #6c6c6c; }
   body .container-fluid main {
-    background-color: #fafafa; }
+    background-color: #fafafa;
+    grid-column-start: 2;
+    grid-column-end: 4;
+    grid-row-start: 2;
+    padding: 30px 8% 0; }
