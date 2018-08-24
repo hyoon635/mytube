@@ -117,7 +117,7 @@ nav {
                 border-radius: 0;
 
                 .dropdown-item {
-                    padding: .5rem 1.5rem;
+                    padding: .5rem .7rem;
                     font: {
                         weight: 400;
                         size: .9rem;
@@ -126,9 +126,10 @@ nav {
                     background-color: #fff;
 
                     .fab, .fas {
-                        font-size: 1.2rem;
+                        font-size: 1.3rem;
                         margin-right: 20px;
                         color: #EB3223;
+                        vertical-align: bottom;
                     }
 
                     &:hover {
@@ -136,10 +137,11 @@ nav {
                     }
                 }
 
-                &.dropdown-menu-right {
+                &.message {
                     width: 480px;
                     padding: 0;
                     background-color: #f8f8f8;
+                    box-shadow: 0px 5px 34px 8px rgba(230, 230, 230, 0.9);
 
                     .dropdown-header {
                         font-size: 1rem;
@@ -180,6 +182,24 @@ nav {
                                 color: #fff;
                                 font-size: .9rem;
                                 font-weight: 300;
+                            }
+                        }
+                    }
+                }
+            }
+
+            &:nth-child(4) {
+                .dropdown-menu {
+                    width: 230px;
+
+                    .dropdown-item {
+                        i {
+                            color: #888;
+
+                            &.fas {
+                                margin-right: 0;
+                                margin-left: 20px;
+                                float: right;
                             }
                         }
                     }
