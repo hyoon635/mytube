@@ -9,7 +9,6 @@
 	<link rel="stylesheet" href="assets/css/style.css">
 	<link rel="stylesheet" href="assets/css/variables.css">
 
-	<!-- Bootstrap CSS -->
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
 
 	<!-- Fontawesome CSS -->
@@ -17,281 +16,99 @@
 
 	<!-- jQuery CDN -->
 	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
 	<script src="script/script.js"></script>
 </head>
 
 <body>
-	<div class="container-fluid">
-		<!-- 헤더영역 -->
-		<header>
-			<!-- 네비게이션 영역 -->
-			<nav class="nav-wrapper">
-				<ul class="col-2 nav-left-area">
-					<li>
-						<span class="burger-button">&#9776;</span>
-					</li>
-					<li>
-						<a href="#">
-							<img src="assets/img/2000px-YouTube_Logo_2017.png" alt="Logo" class="logo">
-						</a>
-					</li>
-				</ul>
-				<form class="col-7">
-					<div class="input-group">
-						<input type="text" class="form-control" placeholder="검색">
-						<a href="#" class="keyboard-icon">
-							<img src="assets/img/tia.png" alt="keyboard">
-						</a>
-						<div class="input-group-append">
-							<button class="btn btn-outline-secondary" type="button">
-								<img src="assets/img/icons8-search-96.png" alt="search">
+	<nav class="navbar navbar-expand-lg navbar-light bg-white">
+		<div class="nav-left">
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+			 aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<a class="navbar-brand" href="#">
+				<img src="assets/img/2000px-YouTube_Logo_2017.png" alt="Logo" class="logo">
+			</a>
+			<span class="country">KR</span>
+		</div>
+
+		<form class="ml-3 my-auto d-inline w-100">
+			<div class="input-group">
+				<input type="text" class="form-control border-right-0 form-control-sm" placeholder="검색">
+				<a href="#" class="keyboard-icon">
+					<img src="assets/img/tia.png" alt="keyboard">
+				</a>
+				<div class="input-group-append">
+					<button class="btn btn-outline-secondary" type="button"><i class="fas fa-search"></i></button>
+				</div>
+			</div>
+		</form>
+		<ul class="navbar-nav mr-auto">
+			<li class="nav-item dropdown">
+				<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true"
+				 aria-expanded="false">
+					<i class="fas fa-video"></i>
+				</a>
+				<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+					<a class="dropdown-item" href="#"><i class="fab fa-youtube"></i>동영상 업로드</a>
+					<a class="dropdown-item" href="#"><i class="fas fa-wifi"></i>실시간 스트리밍 시작</a>
+				</div>
+			</li>
+			<li class="nav-item dropdown">
+				<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true"
+				 aria-expanded="false">
+					<i class="fas fa-th"></i>
+				</a>
+				<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+					<a class="dropdown-item" href="#"><i class="fab fa-youtube"></i>YouTube TV</a>
+					<a class="dropdown-item" href="#"><i class="fab fa-youtube"></i>YouTube Gaming</a>
+					<div class="dropdown-divider"></div>
+					<a class="dropdown-item" href="#"><i class="fab fa-youtube"></i>YouTube Music</a>
+					<a class="dropdown-item" href="#"><i class="fab fa-youtube"></i>YouTube Kids</a>
+					<div class="dropdown-divider"></div>
+					<a class="dropdown-item" href="#"><i class="fab fa-youtube"></i>크리에이터 아카데미</a>
+					<a class="dropdown-item" href="#"><i class="fab fa-youtube"></i>YouTube for Artists</a>
+				</div>
+			</li>
+			<li class="nav-item dropdown">
+				<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true"
+				 aria-expanded="false">
+					<i class="fas fa-comment"></i>
+				</a>
+				<div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+					<h6 class="dropdown-header">메시지</h6>
+					<div class="dropdown-content">
+						<div class="make-channel">
+							<p>YouTube에서 친구에게 메시지를 보내고 동영상을 공유해 보세요.</p>
+							<p>시작하려면 채널을 만드세요.</p>
+							<button>
+								채널 만들기
 							</button>
-							<div class="tooltip">
-								<span class="tooltiptext">검색</span>
-							</div>
 						</div>
 					</div>
-				</form>
-				<ul class="col-3 nav-right-area">
-					<li>
-						<a href="#"><i class="fas fa-video"></i></a>
-						<div class="tooltip">
-							<span class="tooltiptext">동영상 또는 게시물 만들기</span>
-						</div>
-					</li>
-					<li>
-						<a href="#"><i class="fas fa-th"></i></a>
-						<div class="tooltip">
-							<span class="tooltiptext">YouTube 앱</span>
-						</div>
-					</li>
-					<li>
-						<a href="#"><i class="fas fa-comment"></i></a>
-						<div class="tooltip">
-							<span class="tooltiptext">메시지</span>
-						</div>
-					</li>
-					<li>
-						<a href="#"><i class="fas fa-bell"></i></a>
-						<div class="tooltip">
-							<span class="tooltiptext">알림</span>
-						</div>
-					</li>
-					<li class="profile-img">
-						<a href="#">
-							<img src="assets/img/photo.jpg" alt="profile image">
-						</a>
-					</li>
-				</ul>
-			</nav>
-		</header>
-		<nav class="side-nav">
-			<section class="home-section">
-				<h6>home</h6>
-				<ul>
-					<li>
-						<a href="#" class="default">
-							<i class="fas fa-home"></i>
-							홈
-						</a>
-					</li>
-					<li>
-						<a href="#">
-							<i class="fas fa-fire"></i>
-							인기
-						</a>
-					</li>
-					<li>
-						<a href="#">
-							<i class="fab fa-youtube-square"></i>
-							구독
-						</a>
-					</li>
-				</ul>
-			</section>
-			<section class="library-section">
-				<h6>라이브러리</h6>
-				<ul>
-					<li>
-						<a href="#">
-							<i class="far fa-clock"></i>
-							최근 본 동영상
-						</a>
-					</li>
-					<li>
-						<a href="#">
-							<i class="fas fa-clock"></i>
-							나중에 볼 동영상
-						</a>
-					</li>
-					<li>
-						<a href="#">
-							<i class="fas fa-list-ul"></i>
-							좋아요 표시한 동영상
-						</a>
-					</li>
-				</ul>
-			</section>
-			<section class="subscribe-section">
-				<h6> 구독</h6>
-				<ul>
-					<li>
-						<a href="#">
-							<img src="assets/icons/star.jpg" alt="popular"> YouTube 인기
-						</a>
-					</li>
-					<li>
-						<a href="#">
-							<img src="assets/icons/music.jpg" alt="music"> 음악
-						</a>
-					</li>
-					<li>
-						<a href="#">
-							<img src="assets/icons/sports.jpg" alt="sports"> 스포츠
-						</a>
-					</li>
-					<li>
-						<a href="#">
-							<img src="assets/icons/game.jpg" alt="game"> 게임
-						</a>
-					</li>
-				</ul>
-			</section>
-			<section class="viewmore-section">
-				<h6>YOUTUBE 더보기</h6>
-				<ul>
-					<li>
-						<a href="#">
-							<i class="fab fa-youtube"></i>
-							YouTube Premium
-						</a>
-					</li>
-					<li>
-						<a href="#">
-							<i class="fas fa-film"></i>
-							Youtube 영화
-						</a>
-					</li>
-					<li>
-						<a href="#">
-							<i class="fas fa-wifi"></i>
-							실시간
-						</a>
-					</li>
-				</ul>
-			</section>
-			<section class="setting-section">
-				<h6>setting</h6>
-				<ul>
-					<li>
-						<a href="#">
-							<i class="fas fa-cog"></i>
-							설정</a>
-					</li>
-
-					<li>
-						<a href="#">
-							<i class="fas fa-flag"></i>
-							신고 기록</a>
-					</li>
-
-					<li>
-						<a href="#">
-							<i class="fas fa-question-circle"></i>
-							고객센터</a>
-					</li>
-
-					<li>
-						<a href="#">
-							<i class="fas fa-comment-alt"></i>
-							의견 보내기</a>
-					</li>
-				</ul>
-			</section>
-			<footer>
-				<ul class="links-primary">
-					<li><a href="#">정보</a></li>
-					<li><a href="#">프레스</a></li>
-					<li><a href="#">저작권</a></li>
-					<li><a href="#">크리에이터</a></li>
-					<li><a href="#">광고</a></li>
-					<li><a href="#">개발자</a></li>
-					<li><a href="#">+YouTube</a></li>
-				</ul>
-				<ul class="links-secondary">
-					<li><a href="#">이용약관</a></li>
-					<li><a href="#">개인정보 보호</a></li>
-					<li><a href="#">정책 및 안전</a></li>
-					<li><a href="#">새로운 기능 테스트하기</a></li>
-				</ul>
-				<div class="copyright">
-					<p>&#169; 2018 YouTube, LLC</p>
 				</div>
-			</footer>
-		</nav>
-		<main>
-			<section>
-				<div class="title-area">
-					<img src="assets/img/unnamed.jpg" alt="creator image">
-					<h6>alexrainbridMusic</h6>
-					<span>맞춤 채널</span>
-					<div class="subscription-num">구독 45만</div>
-					<button class="close">
-						<i class="fas fa-times"></i>
-					</button>
+			</li>
+			<li class="nav-item dropdown">
+				<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true"
+				 aria-expanded="false">
+					<i class="fas fa-bell"></i>
+				</a>
+				<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+					<a class="dropdown-item" href="#">Action</a>
+					<a class="dropdown-item" href="#">Another action</a>
+					<div class="dropdown-divider"></div>
+					<a class="dropdown-item" href="#">Something else here</a>
 				</div>
-				<div class="video-list"></div>
-			</section>
-			<section>
-				<div class="title-area">
-					<img src="assets/img/unnamed.jpg" alt="creator image">
-					<h6>alexrainbridMusic</h6>
-					<span>맞춤 채널</span>
-					<div class="subscription-num">구독 45만</div>
-					<button class="close">
-						<i class="fas fa-times"></i>
-					</button>
-				</div>
-				<div class="video-list"></div>
-			</section>
-			<section>
-				<div class="title-area">
-					<img src="assets/img/unnamed.jpg" alt="creator image">
-					<h6>alexrainbridMusic</h6>
-					<span>맞춤 채널</span>
-					<div class="subscription-num">구독 45만</div>
-					<button class="close">
-						<i class="fas fa-times"></i>
-					</button>
-				</div>
-				<div class="video-list"></div>
-			</section>
-			<section>
-				<div class="title-area">
-					<img src="assets/img/unnamed.jpg" alt="creator image">
-					<h6>alexrainbridMusic</h6>
-					<span>맞춤 채널</span>
-					<div class="subscription-num">구독 45만</div>
-					<button class="close">
-						<i class="fas fa-times"></i>
-					</button>
-				</div>
-				<div class="video-list"></div>
-			</section>
-			<section>
-				<div class="title-area">
-					<img src="assets/img/unnamed.jpg" alt="creator image">
-					<h6>alexrainbridMusic</h6>
-					<span>맞춤 채널</span>
-					<div class="subscription-num">구독 45만</div>
-					<button class="close">
-						<i class="fas fa-times"></i>
-					</button>
-				</div>
-				<div class="video-list"></div>
-			</section>
-		</main>
-	</div>
+			</li>
+			<li class="nav-item profile-img">
+				<a class="nav-link" href="#">
+					<img src="assets/img/photo.jpg" alt="profile image">
+				</a>
+			</li>
+		</ul>
+	</nav>
 </body>
 
 </html>
