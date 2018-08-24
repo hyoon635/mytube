@@ -39,6 +39,8 @@ ul {
 }
 
 a {
+    color: unset !important;
+
     &:hover {
         text-decoration: none !important;
     }
