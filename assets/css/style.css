@@ -7,8 +7,8 @@ body .container-fluid {
   margin: 0;
   height: 100%;
   display: grid;
-  grid-template-areas: "header header header" "menu main main";
-  grid-template-columns: 240px auto 300px;
+  grid-template-areas: "header header" "menu mainain";
+  grid-template-columns: 240px;
   grid-template-rows: 56px; }
   body .container-fluid header {
     position: fixed;
@@ -170,15 +170,16 @@ body .container-fluid {
           color: #6c6c6c; }
   body .container-fluid main {
     background-color: #fafafa;
-    padding: 15px 5% 0;
+    padding-top: 15px;
     overflow-y: scroll;
     grid-column-start: 2;
-    grid-column-end: 4;
+    grid-column-end: 3;
     grid-row-start: 2; }
     body .container-fluid main section {
       display: grid;
       grid-template-rows: 40px;
-      border-bottom: 1px solid #eee;
+      justify-content: center;
+      align-items: center;
       margin-bottom: 20px; }
       body .container-fluid main section .title-area {
         display: flex;
@@ -211,7 +212,9 @@ body .container-fluid {
           font-size: 1.3rem; }
       body .container-fluid main section .video-list {
         display: grid;
-        justify-content: space-around; }
+        grid-gap: 5px;
+        justify-content: space-around;
+        border-bottom: 1px solid #eee; }
         body .container-fluid main section .video-list a {
           width: 210px;
           margin: 20px 0;

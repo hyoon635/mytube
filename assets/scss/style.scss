@@ -19,8 +19,8 @@ body {
         height: 100%;
         display: grid;
         grid: {
-            template-areas: "header header header" "menu main main";
-            template-columns: 240px auto 300px;
+            template-areas: "header header" "menu mainain";
+            template-columns: 240px;
             template-rows: 56px;
         }; // sass 속성 네스팅
 
@@ -312,18 +312,19 @@ body {
 
         main {
             background-color: #fafafa;
-            padding: 15px 5% 0;
+            padding-top: 15px;
             overflow-y: scroll;
             grid: {
                 column-start: 2;
-                column-end: 4;
+                column-end: 3;
                 row-start: 2;
             };
 
             section {
                 display: grid;
                 grid-template-rows: 40px;
-                border-bottom: 1px solid #eee;
+                justify-content: center;
+                align-items: center;
                 margin-bottom: 20px;
 
                 .title-area {
@@ -377,7 +378,9 @@ body {
 
                 .video-list {
                     display: grid;
+                    grid-gap: 5px;
                     justify-content: space-around;
+                    border-bottom: 1px solid #eee;
 
                     a {
                         width: 210px;
