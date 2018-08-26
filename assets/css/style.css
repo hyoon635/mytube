@@ -21,114 +21,119 @@ body {
         body .grid nav .nav-left .navbar-toggler .navbar-toggler-icon {
           width: 1.2em;
           height: 1.2em; }
-      body .grid nav .nav-left .navbar-brand {
-        margin-right: 0; }
-        body .grid nav .nav-left .navbar-brand .logo {
-          width: 80px;
-          height: 20px; }
+      body .grid nav .nav-left .navbar-brand margin {
+        right: 0;
+        left: 15px; }
+      body .grid nav .nav-left .navbar-brand .logo {
+        width: 80px;
+        height: 20px; }
       body .grid nav .nav-left .country {
         font-size: 0.5rem;
         color: #888888;
         position: relative;
         bottom: 9px;
         right: 3px; }
-      body .grid nav form.ml-3 {
-        margin-left: 3rem !important; }
-      body .grid nav form.w-100 {
-        width: 40% !important; }
-      body .grid nav form .input-group .keyboard-icon {
-        float: right;
-        position: relative;
-        top: 1px;
-        right: 35px;
-        z-index: 9; }
-        body .grid nav form .input-group .keyboard-icon img {
-          width: 20px; }
-      body .grid nav form .input-group .input-group-append {
-        margin-left: -25px; }
-        body .grid nav form .input-group .input-group-append button {
-          width: 65px;
-          height: 31px;
-          border: 1px solid #ced4da;
-          background-color: #f8f8f8; }
-          body .grid nav form .input-group .input-group-append button.btn {
-            padding: 0;
-            border-radius: 0.15rem; }
-          body .grid nav form .input-group .input-group-append button:hover {
-            background-color: #f0f0f0;
-            color: #333; }
-      body .grid nav .navbar-nav.mr-auto {
-        margin-right: 15px !important; }
-      body .grid nav .navbar-nav .nav-item.dropdown .nav-link {
-        color: #a0a0a0;
-        font-size: 1.2rem;
-        padding: 0 15px; }
-        body .grid nav .navbar-nav .nav-item.dropdown .nav-link.dropdown-toggle::after {
+      body .grid nav form {
+        max-width: 640px;
+        width: 45%; }
+        body .grid nav form .input-group .keyboard-icon {
+          float: right;
+          position: relative;
+          top: 1px;
+          right: 35px;
+          z-index: 9; }
+          body .grid nav form .input-group .keyboard-icon img {
+            width: 20px; }
+        body .grid nav form .input-group .input-group-append {
+          margin-left: -25px; }
+          body .grid nav form .input-group .input-group-append button {
+            width: 65px;
+            height: 31px;
+            border: 1px solid #ced4da;
+            background-color: #f8f8f8; }
+            body .grid nav form .input-group .input-group-append button.btn {
+              padding: 0;
+              border-radius: 0.15rem; }
+            body .grid nav form .input-group .input-group-append button:hover {
+              background-color: #f0f0f0;
+              color: #333; }
+      body .grid nav .navbar-nav {
+        flex-direction: row; }
+        body .grid nav .navbar-nav:first-child {
           display: none; }
-        body .grid nav .navbar-nav .nav-item.dropdown .nav-link.dropdown-toggle:hover {
-          color: #a0a0a0; }
-      body .grid nav .navbar-nav .nav-item.profile-img .nav-link {
-        margin-left: 13px;
-        padding: 0; }
-        body .grid nav .navbar-nav .nav-item.profile-img .nav-link img {
-          width: 32px;
-          border-radius: 50%; }
-      body .grid nav .navbar-nav .nav-item .dropdown-menu {
-        border-radius: 0;
-        box-shadow: 0px 15px 34px 8px rgba(0, 0, 0, 0.2); }
-        body .grid nav .navbar-nav .nav-item .dropdown-menu .dropdown-item {
-          padding: 0.5rem 0.7rem;
-          font-weight: 400;
-          font-size: 0.9rem;
-          color: #333;
-          background-color: #fff; }
-          body .grid nav .navbar-nav .nav-item .dropdown-menu .dropdown-item .fab,
-          body .grid nav .navbar-nav .nav-item .dropdown-menu .dropdown-item .fas {
-            font-size: 1.3rem;
-            margin-right: 20px;
-            color: #eb3223;
-            vertical-align: bottom; }
-          body .grid nav .navbar-nav .nav-item .dropdown-menu .dropdown-item:hover {
-            background-color: #f5f5f5; }
-        body .grid nav .navbar-nav .nav-item .dropdown-menu.message {
-          width: 480px;
-          padding: 0;
-          background-color: #f8f8f8; }
-          body .grid nav .navbar-nav .nav-item .dropdown-menu.message .dropdown-header {
-            font-size: 1rem;
+        body .grid nav .navbar-nav.mr-auto {
+          margin: 0 10px !important; }
+        body .grid nav .navbar-nav .nav-item.dropdown .nav-link {
+          color: #a0a0a0 !important;
+          font-size: 1rem;
+          padding: 0 12px; }
+          body .grid nav .navbar-nav .nav-item.dropdown .nav-link.dropdown-toggle::after {
+            display: none; }
+          body .grid nav .navbar-nav .nav-item.dropdown .nav-link.dropdown-toggle:hover {
+            color: #a0a0a0; }
+        body .grid nav .navbar-nav .nav-item.profile-img .nav-link {
+          margin-left: 13px;
+          padding: 0; }
+          body .grid nav .navbar-nav .nav-item.profile-img .nav-link img {
+            width: 32px;
+            border-radius: 50%; }
+        body .grid nav .navbar-nav .nav-item .dropdown-menu {
+          position: absolute;
+          border-radius: 0;
+          box-shadow: 0px 15px 34px 8px rgba(0, 0, 0, 0.2); }
+          body .grid nav .navbar-nav .nav-item .dropdown-menu .dropdown-item {
+            padding: 0.5rem 0.7rem;
+            font-weight: 400;
+            font-size: 0.9rem;
             color: #333;
-            padding: 1rem; }
-          body .grid nav .navbar-nav .nav-item .dropdown-menu.message .dropdown-content {
-            height: 420px;
             background-color: #fff; }
-            body .grid nav .navbar-nav .nav-item .dropdown-menu.message .dropdown-content .make-channel {
-              text-align: center;
-              padding: 120px 103px; }
-              body .grid nav .navbar-nav .nav-item .dropdown-menu.message .dropdown-content .make-channel p {
-                color: #888888; }
-                body .grid nav .navbar-nav .nav-item .dropdown-menu.message .dropdown-content .make-channel p:nth-child(1) {
-                  font-weight: 600;
-                  margin-bottom: 8px; }
-                body .grid nav .navbar-nav .nav-item .dropdown-menu.message .dropdown-content .make-channel p:nth-child(2) {
+            body .grid nav .navbar-nav .nav-item .dropdown-menu .dropdown-item .fab,
+            body .grid nav .navbar-nav .nav-item .dropdown-menu .dropdown-item .fas {
+              font-size: 1.3rem;
+              margin-right: 20px;
+              color: #eb3223;
+              vertical-align: bottom; }
+            body .grid nav .navbar-nav .nav-item .dropdown-menu .dropdown-item:hover {
+              background-color: #f5f5f5; }
+          body .grid nav .navbar-nav .nav-item .dropdown-menu.message {
+            width: 480px;
+            padding: 0;
+            background-color: #f8f8f8; }
+            body .grid nav .navbar-nav .nav-item .dropdown-menu.message .dropdown-header {
+              font-size: 1rem;
+              color: #333;
+              padding: 1rem; }
+            body .grid nav .navbar-nav .nav-item .dropdown-menu.message .dropdown-content {
+              height: 420px;
+              background-color: #fff; }
+              body .grid nav .navbar-nav .nav-item .dropdown-menu.message .dropdown-content .make-channel {
+                text-align: center;
+                padding: 120px 103px; }
+                body .grid nav .navbar-nav .nav-item .dropdown-menu.message .dropdown-content .make-channel p {
+                  color: #888888; }
+                  body .grid nav .navbar-nav .nav-item .dropdown-menu.message .dropdown-content .make-channel p:nth-child(1) {
+                    font-weight: 600;
+                    margin-bottom: 8px; }
+                  body .grid nav .navbar-nav .nav-item .dropdown-menu.message .dropdown-content .make-channel p:nth-child(2) {
+                    font-size: 0.9rem;
+                    font-weight: 400;
+                    margin-bottom: 25px; }
+                body .grid nav .navbar-nav .nav-item .dropdown-menu.message .dropdown-content .make-channel button {
+                  background-color: #4693e0;
+                  border: none;
+                  padding: 8px 15px;
+                  border-radius: 2px;
+                  color: #fff;
                   font-size: 0.9rem;
-                  font-weight: 400;
-                  margin-bottom: 25px; }
-              body .grid nav .navbar-nav .nav-item .dropdown-menu.message .dropdown-content .make-channel button {
-                background-color: #4693e0;
-                border: none;
-                padding: 8px 15px;
-                border-radius: 2px;
-                color: #fff;
-                font-size: 0.9rem;
-                font-weight: 300; }
-      body .grid nav .navbar-nav .nav-item:nth-child(4) .dropdown-menu {
-        width: 230px; }
-        body .grid nav .navbar-nav .nav-item:nth-child(4) .dropdown-menu .dropdown-item i {
-          color: #888888; }
-          body .grid nav .navbar-nav .nav-item:nth-child(4) .dropdown-menu .dropdown-item i.fas {
-            margin-right: 0;
-            margin-left: 20px;
-            float: right; }
+                  font-weight: 300; }
+        body .grid nav .navbar-nav .nav-item:nth-child(5) .dropdown-menu {
+          width: 230px; }
+          body .grid nav .navbar-nav .nav-item:nth-child(5) .dropdown-menu .dropdown-item i {
+            color: #888888; }
+            body .grid nav .navbar-nav .nav-item:nth-child(5) .dropdown-menu .dropdown-item i.fas {
+              margin-right: 0;
+              margin-left: 20px;
+              float: right; }
     body .grid .side-nav {
       width: 240px;
       height: 100vh;
@@ -194,74 +199,71 @@ body {
     body .grid main {
       height: 100vh;
       background-color: #fafafa;
-      padding-top: 15px;
+      padding-top: 25px;
       overflow-y: scroll;
       grid-column-start: 2;
       grid-column-end: 3;
       grid-row-start: 2; }
-      body .grid main section {
-        padding-top: 25px; }
-        body .grid main section .container {
+      body .grid main section .container {
+        padding: 0;
+        margin: 0 auto 15px; }
+      body .grid main section .video-subject .channel-info {
+        padding-left: 0; }
+        body .grid main section .video-subject .channel-info img {
+          border-radius: 50%;
+          width: 30px; }
+        body .grid main section .video-subject .channel-info h6 {
+          display: inline-block;
+          padding-left: 5px;
+          letter-spacing: -0.5px;
+          font-weight: 500; }
+        body .grid main section .video-subject .channel-info span {
+          font-size: 0.8rem;
+          font-weight: 400;
+          color: #888888; }
+      body .grid main section .video-subject .channel-info-right {
+        text-align: right; }
+        body .grid main section .video-subject .channel-info-right .subscription-num {
+          display: inline-block;
+          letter-spacing: 1px;
+          background-color: #eb3223;
+          color: #ffffff;
+          font-size: 0.8rem;
+          font-weight: 400;
+          padding: 10px 18px;
+          border-radius: 2px; }
+        body .grid main section .video-subject .channel-info-right .close {
+          color: #9d9d9d;
+          font-size: 1.3rem;
+          margin-top: 7px;
+          margin-left: 15px; }
+      body .grid main section .video-list {
+        padding-bottom: 30px;
+        border-bottom: 2px solid #eee; }
+        body .grid main section .video-list .video-wrap.col-md-2 {
           padding: 0;
-          margin: 0 auto 15px;
-          width: 1070px; }
-        body .grid main section .video-subject .channel-info {
-          padding-left: 0; }
-          body .grid main section .video-subject .channel-info img {
-            border-radius: 50%;
-            width: 30px; }
-          body .grid main section .video-subject .channel-info h6 {
+          margin-right: 35px; }
+        body .grid main section .video-list .video-wrap a {
+          position: relative;
+          display: inline-block; }
+          body .grid main section .video-list .video-wrap a img {
+            width: 210px; }
+          body .grid main section .video-list .video-wrap a p {
+            font-size: 0.9rem;
+            font-weight: 600;
+            padding-bottom: 5px; }
+          body .grid main section .video-list .video-wrap a span {
             display: inline-block;
-            padding-left: 5px;
-            letter-spacing: -0.5px;
-            font-weight: 500; }
-          body .grid main section .video-subject .channel-info span {
             font-size: 0.8rem;
-            font-weight: 400;
-            color: #888888; }
-        body .grid main section .video-subject .channel-info-right {
-          text-align: right; }
-          body .grid main section .video-subject .channel-info-right .subscription-num {
-            display: inline-block;
-            letter-spacing: 1px;
-            background-color: #eb3223;
-            color: #ffffff;
-            font-size: 0.8rem;
-            font-weight: 400;
-            padding: 10px 18px;
-            border-radius: 2px; }
-          body .grid main section .video-subject .channel-info-right .close {
-            color: #9d9d9d;
-            font-size: 1.3rem;
-            margin-top: 7px;
-            margin-left: 15px; }
-        body .grid main section .video-list {
-          padding-bottom: 30px;
-          border-bottom: 2px solid #eee; }
-          body .grid main section .video-list .video-wrap.col-md-2 {
-            padding: 0;
-            margin-right: 35px; }
-          body .grid main section .video-list .video-wrap a {
-            position: relative;
-            display: inline-block; }
-            body .grid main section .video-list .video-wrap a img {
-              width: 210px; }
-            body .grid main section .video-list .video-wrap a p {
-              font-size: 0.9rem;
-              font-weight: 600;
-              padding-bottom: 5px; }
-            body .grid main section .video-list .video-wrap a span {
-              display: inline-block;
-              font-size: 0.8rem;
-              color: #9d9d9d; }
-              body .grid main section .video-list .video-wrap a span i {
-                padding-left: 5px; }
-              body .grid main section .video-list .video-wrap a span.time {
-                position: absolute;
-                top: 45%;
-                right: 5px;
-                font-size: 0.75rem;
-                background-color: rgba(0, 0, 0, 0.8);
-                color: #ffffff;
-                padding: 0 5px;
-                border-radius: 2px; }
+            color: #9d9d9d; }
+            body .grid main section .video-list .video-wrap a span i {
+              padding-left: 5px; }
+            body .grid main section .video-list .video-wrap a span.time {
+              position: absolute;
+              top: 45%;
+              right: 5px;
+              font-size: 0.75rem;
+              background-color: rgba(0, 0, 0, 0.8);
+              color: #ffffff;
+              padding: 0 5px;
+              border-radius: 2px; }

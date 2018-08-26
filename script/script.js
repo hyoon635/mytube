@@ -11,31 +11,52 @@ $(document).ready(function() {
   var VideoList = "";
   for (var i = 0; i < Video.length; i++) {
     VideoList +=
-      '<div class="video-wrap col-md-2"><a href="#"> <img src="' +
+      '<div class="video-wrap col-xl-2 col-lg-2 col-md-2 col-sm-2"><a href="#"> <img src="' +
       Video[i].img +
       '" alt="video" class="video-img"><span class="time">1:24:39</span><p>Wanderlust 🌲 - An Indie/Folk/Pop Playlist</p><span>alexrainbridMusic<i class="fas fa-check-circle"></i></span><span>조회수 16만회 ・ 3주전</span></a></div>';
   }
   $(".video-list").html(VideoList);
 
+  $(".video-wrap:nth-child(6)").addClass("d-xl-none");
+
   //사이드바 toggle
-  if ($(".video-list").css("width", "1070px")) {
-    $(".video-wrap:last-child").css("display", "none");
-  }
+  // if ($(".video-list").css("width", "1070px")) {
+  //   $(".video-wrap:last-child").css("display", "none");
+  // }
+  // $(".burger-button").click(function() {
+  //   $(".side-nav").toggleClass("hide");
+
+  //   if ($(".side-nav").hasClass("hide")) {
+  //     $("main").css("grid-column-start", "1");
+  //     $(".video-list, .video-subject")
+  //       .css("max-width", "1285px")
+  //       .css("width", "1285px");
+  //     $(".video-list > .col-md-2").css("margin-right", "0");
+  //     $(".video-wrap:last-child").removeClass("d-xl-none");
+  //   } else {
+  //     $("main").css("grid-column-start", "2");
+  //     $(".video-list, .video-subject").css("width", "1070px");
+  //     $(".video-list > .col-md-2").css("margin-right", "35px");
+  //     $(".video-wrap:last-child").addClass("d-xl-none");
+  //   }
+  // });
+
   $(".burger-button").click(function() {
     $(".side-nav").toggleClass("hide");
 
     if ($(".side-nav").hasClass("hide")) {
       $("main").css("grid-column-start", "1");
-      $(".video-list, .video-subject")
-        .css("max-width", "1285px")
-        .css("width", "1285px");
-      $(".video-list > .col-md-2").css("margin-right", "0");
-      $(".video-wrap:last-child").css("display", "block");
+      $(".video-wrap:nth-child(5), .video-wrap:nth-child(6)").removeClass(
+        "d-xl-none"
+      );
+      $(".video-list, .video-subject").addClass("wdt-1280");
+      $(".video-list > .col-md-2").addClass("mr-0");
     } else {
       $("main").css("grid-column-start", "2");
-      $(".video-list, .video-subject").css("width", "1070px");
-      $(".video-list > .col-md-2").css("margin-right", "35px");
-      $(".video-wrap:last-child").css("display", "none");
+      $(".video-list, .video-subject").removeClass("wdt-1280");
+      $(".video-list, .video-subject").addClass("wdt-1070");
+      $(".video-wrap:nth-child(6)").addClass("d-xl-none");
+      $(".video-list > .col-md-2").removeClass("mr-0");
     }
   });
 });

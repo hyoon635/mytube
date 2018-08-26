@@ -40,7 +40,10 @@ body {
         }
 
         .navbar-brand {
-          margin-right: 0;
+          margin {
+              right: 0;
+              left: 15px;;
+          }
 
           .logo {
             width: 80px;
@@ -58,13 +61,8 @@ body {
       }
 
       form {
-        &.ml-3 {
-          margin-left: 3rem !important;
-        }
-
-        &.w-100 {
-          width: 40% !important;
-        }
+        max-width: 640px;
+        width: 45%;
 
         .input-group {
           .keyboard-icon {
@@ -103,16 +101,20 @@ body {
       }
 
       .navbar-nav {
+          &:first-child {
+              display: none;
+          }
+        flex-direction: row;
         &.mr-auto {
-          margin-right: 15px !important;
+          margin: 0 10px !important;
         }
 
         .nav-item {
           &.dropdown {
             .nav-link {
-              color: #a0a0a0;
-              font-size: 1.2rem;
-              padding: 0 15px;
+              color: #a0a0a0 !important;
+              font-size: 1rem;
+              padding: 0 12px;
 
               &.dropdown-toggle {
                 &::after {
@@ -139,6 +141,7 @@ body {
           }
 
           .dropdown-menu {
+              position: absolute;
             border-radius: 0;
             box-shadow: 0px 15px 34px 8px rgba(0, 0, 0, 0.2);
 
@@ -214,7 +217,7 @@ body {
             }
           }
 
-          &:nth-child(4) {
+          &:nth-child(5) {
             .dropdown-menu {
               width: 230px;
 
@@ -352,7 +355,7 @@ body {
     main {
       height: 100vh;
       background-color: #fafafa;
-      padding-top: 15px;
+      padding-top: 25px;
       overflow-y: scroll;
       grid: {
         column-start: 2;
@@ -361,11 +364,10 @@ body {
       }
 
       section {
-          padding-top: 25px;
         .container {
           padding: 0;
           margin: 0 auto 15px;
-          width: 1070px;
+          //width: 1070px;
         }
         .video-subject {
           .channel-info {
