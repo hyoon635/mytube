@@ -58,7 +58,7 @@ body {
                     color: $c-grey888;
                     position: relative;
                     bottom: 9px;
-                    right: 3px;
+                    right: 18px;
                 }
             }
 
@@ -254,6 +254,23 @@ body {
 
         .header-section {
             @extend .nav-left;
+
+            margin: {
+                left: 15px;
+                bottom: 10px;
+            };
+            padding-bottom: 15px;
+            border-bottom: 1px solid #eee;
+            position: fixed;
+            top: 0;
+            left: 0;
+
+            /* top layer */
+            z-index: 9999;
+
+            .navbar-brand {
+                margin-left: 5px;
+            }
         }
 
         // 사이드 네비게이션

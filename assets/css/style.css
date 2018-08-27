@@ -33,7 +33,7 @@ body {
         color: #888888;
         position: relative;
         bottom: 9px;
-        right: 3px; }
+        right: 18px; }
       body .grid nav form {
         max-width: 640px;
         width: 45%; }
@@ -140,6 +140,13 @@ body {
       display: none;
       z-index: 999;
       transition: 1s; }
+    body .grid .header-section {
+      margin-left: 15px;
+      margin-bottom: 10px;
+      padding-bottom: 15px;
+      border-bottom: 1px solid #eee; }
+      body .grid .header-section .navbar-brand {
+        margin-left: 5px; }
     body .grid .side-nav, body .grid .side-nav-slide {
       width: 240px;
       height: 100vh;
