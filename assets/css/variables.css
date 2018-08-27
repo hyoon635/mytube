@@ -65,6 +65,8 @@
 @media (max-width: 657px) {
   body .grid form {
     display: none; }
+  body .grid nav .navbar-nav .nav-item.search {
+    display: block; }
   body .grid .side-nav {
     display: none; }
   body .grid main {
@@ -143,21 +145,15 @@ p {
   width: 1070px; }
 
 .grid-c-start-1 {
-  grid-column-start: 1; }
+  grid-column-start: 1 !important; }
 
 .grid-c-start-2 {
-  grid-column-start: 2; }
+  grid-column-start: 2 !important; }
 
 .overlay {
-  display: block;
-  position: fixed;
-  /* full screen */
+  display: none;
   width: 100vw;
   height: 100vh;
-  /* transparent black */
   background: rgba(0, 0, 0, 0.7);
-  /* middle layer, i.e. appears below the sidebar */
-  z-index: 998;
-  opacity: 0;
-  /* animate the transition */
-  transition: all 0.5s ease-in-out; }
+  z-index: 999;
+  transition: all 0.3s ease-in-out; }

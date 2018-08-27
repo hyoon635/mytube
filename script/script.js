@@ -26,12 +26,14 @@ $(document).ready(function() {
 
       if ($(".side-nav").hasClass("hide")) {
         $("main").addClass("grid-c-start-1");
+        $("main").removeClass("grid-c-start-2");
         $(".video-wrap:nth-child(5), .video-wrap:nth-child(6)").removeClass(
           "d-xl-none"
         );
         $(".video-list, .video-subject").addClass("wdt-1280");
         $(".video-list > .col-md-2").addClass("mr-0");
       } else {
+        $("main").removeClass("grid-c-start-1");
         $("main").addClass("grid-c-start-2");
         $(".video-list, .video-subject").removeClass("wdt-1280");
         $(".video-list, .video-subject").addClass("wdt-1070");
@@ -42,8 +44,12 @@ $(document).ready(function() {
   }
 
   if ($(window).width() < 1389) {
-    $(".burger-button, .overlay").click(function() {
+    $(".burger-button").click(function() {
       $(".side-nav-slide").toggleClass("show");
+      $(".overlay").toggleClass("show");
     });
+  }else {
+    $(".side-nav-slide").removeClass("show");
+    $(".overlay").removeClass("show");
   }
 });
