@@ -16,18 +16,19 @@ body {
         position: fixed;
         width: 100%;
         z-index: 999; }
-      body .grid nav .nav-left .navbar-toggler {
+      body .grid nav .nav-left .navbar-toggler, body .grid nav .header-section .navbar-toggler {
         border-color: transparent; }
-        body .grid nav .nav-left .navbar-toggler .navbar-toggler-icon {
+        body .grid nav .nav-left .navbar-toggler .navbar-toggler-icon, body .grid nav .header-section .navbar-toggler .navbar-toggler-icon {
           width: 1.2em;
-          height: 1.2em; }
-      body .grid nav .nav-left .navbar-brand margin {
+          height: 1.2em;
+          background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(154, 154, 154, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E"); }
+      body .grid nav .nav-left .navbar-brand margin, body .grid nav .header-section .navbar-brand margin {
         right: 0;
         left: 15px; }
-      body .grid nav .nav-left .navbar-brand .logo {
+      body .grid nav .nav-left .navbar-brand .logo, body .grid nav .header-section .navbar-brand .logo {
         width: 80px;
         height: 20px; }
-      body .grid nav .nav-left .country {
+      body .grid nav .nav-left .country, body .grid nav .header-section .country {
         font-size: 0.5rem;
         color: #888888;
         position: relative;
@@ -134,7 +135,12 @@ body {
               margin-right: 0;
               margin-left: 20px;
               float: right; }
-    body .grid .side-nav {
+    body .grid .side-nav-slide {
+      position: absolute;
+      display: none;
+      z-index: 999;
+      transition: 1s; }
+    body .grid .side-nav, body .grid .side-nav-slide {
       width: 240px;
       height: 100vh;
       overflow-y: scroll;
@@ -143,56 +149,56 @@ body {
       padding-top: 10px;
       grid-column-start: 1;
       grid-row-start: 2; }
-      body .grid .side-nav section h6 {
+      body .grid .side-nav section h6, body .grid .side-nav-slide section h6 {
         font-size: 0.9rem;
         font-weight: 400;
         color: #6c6c6c;
         padding: 15px 0 0 30px; }
-      body .grid .side-nav section ul {
+      body .grid .side-nav section ul, body .grid .side-nav-slide section ul {
         padding-left: 0;
         margin-bottom: 0;
         border-bottom: 1px solid #eee;
         padding-bottom: 16px; }
-        body .grid .side-nav section ul li {
+        body .grid .side-nav section ul li, body .grid .side-nav-slide section ul li {
           font-size: 0.9rem; }
-          body .grid .side-nav section ul li a {
+          body .grid .side-nav section ul li a, body .grid .side-nav-slide section ul li a {
             width: 240px;
             height: 40px;
             display: flex;
             align-items: center; }
-            body .grid .side-nav section ul li a i {
+            body .grid .side-nav section ul li a i, body .grid .side-nav-slide section ul li a i {
               color: #888888;
               text-align: center;
               font-size: 1.2rem;
               width: 80px; }
-            body .grid .side-nav section ul li a.default {
+            body .grid .side-nav section ul li a.default, body .grid .side-nav-slide section ul li a.default {
               background-color: #dcdcdc; }
-              body .grid .side-nav section ul li a.default i {
+              body .grid .side-nav section ul li a.default i, body .grid .side-nav-slide section ul li a.default i {
                 color: #eb3223; }
-              body .grid .side-nav section ul li a.default:hover {
+              body .grid .side-nav section ul li a.default:hover, body .grid .side-nav-slide section ul li a.default:hover {
                 background-color: #d3d3d3; }
-            body .grid .side-nav section ul li a:hover {
+            body .grid .side-nav section ul li a:hover, body .grid .side-nav-slide section ul li a:hover {
               background-color: #ebebeb; }
-      body .grid .side-nav section.home-section h6, body .grid .side-nav section.setting-section h6 {
+      body .grid .side-nav section.home-section h6, body .grid .side-nav-slide section.home-section h6, body .grid .side-nav section.setting-section h6, body .grid .side-nav-slide section.setting-section h6 {
         display: none; }
-      body .grid .side-nav section.subscribe-section img {
+      body .grid .side-nav section.subscribe-section img, body .grid .side-nav-slide section.subscribe-section img {
         width: 80px;
         border-radius: 50%;
         padding: 0 28px; }
-      body .grid .side-nav footer {
+      body .grid .side-nav footer, body .grid .side-nav-slide footer {
         padding: 30px; }
-        body .grid .side-nav footer ul {
+        body .grid .side-nav footer ul, body .grid .side-nav-slide footer ul {
           display: flex;
           flex-wrap: wrap; }
-          body .grid .side-nav footer ul li a {
+          body .grid .side-nav footer ul li a, body .grid .side-nav-slide footer ul li a {
             color: unset;
             font-size: 0.8rem;
             font-weight: 500;
             color: #888888;
             margin: 0 3px; }
-        body .grid .side-nav footer .copyright {
+        body .grid .side-nav footer .copyright, body .grid .side-nav-slide footer .copyright {
           padding-top: 20px; }
-          body .grid .side-nav footer .copyright p {
+          body .grid .side-nav footer .copyright p, body .grid .side-nav-slide footer .copyright p {
             font-size: 0.8rem;
             font-weight: 500;
             color: #6c6c6c; }

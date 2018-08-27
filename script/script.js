@@ -20,43 +20,30 @@ $(document).ready(function() {
   $(".video-wrap:nth-child(6)").addClass("d-xl-none");
 
   //사이드바 toggle
-  // if ($(".video-list").css("width", "1070px")) {
-  //   $(".video-wrap:last-child").css("display", "none");
-  // }
-  // $(".burger-button").click(function() {
-  //   $(".side-nav").toggleClass("hide");
+  if ($(window).width() > 1389) {
+    $(".burger-button").click(function() {
+      $(".side-nav").toggleClass("hide");
 
-  //   if ($(".side-nav").hasClass("hide")) {
-  //     $("main").css("grid-column-start", "1");
-  //     $(".video-list, .video-subject")
-  //       .css("max-width", "1285px")
-  //       .css("width", "1285px");
-  //     $(".video-list > .col-md-2").css("margin-right", "0");
-  //     $(".video-wrap:last-child").removeClass("d-xl-none");
-  //   } else {
-  //     $("main").css("grid-column-start", "2");
-  //     $(".video-list, .video-subject").css("width", "1070px");
-  //     $(".video-list > .col-md-2").css("margin-right", "35px");
-  //     $(".video-wrap:last-child").addClass("d-xl-none");
-  //   }
-  // });
+      if ($(".side-nav").hasClass("hide")) {
+        $("main").addClass("grid-c-start-1");
+        $(".video-wrap:nth-child(5), .video-wrap:nth-child(6)").removeClass(
+          "d-xl-none"
+        );
+        $(".video-list, .video-subject").addClass("wdt-1280");
+        $(".video-list > .col-md-2").addClass("mr-0");
+      } else {
+        $("main").addClass("grid-c-start-2");
+        $(".video-list, .video-subject").removeClass("wdt-1280");
+        $(".video-list, .video-subject").addClass("wdt-1070");
+        $(".video-wrap:nth-child(6)").addClass("d-xl-none");
+        $(".video-list > .col-md-2").removeClass("mr-0");
+      }
+    });
+  }
 
-  $(".burger-button").click(function() {
-    $(".side-nav").toggleClass("hide");
-
-    if ($(".side-nav").hasClass("hide")) {
-      $("main").css("grid-column-start", "1");
-      $(".video-wrap:nth-child(5), .video-wrap:nth-child(6)").removeClass(
-        "d-xl-none"
-      );
-      $(".video-list, .video-subject").addClass("wdt-1280");
-      $(".video-list > .col-md-2").addClass("mr-0");
-    } else {
-      $("main").css("grid-column-start", "2");
-      $(".video-list, .video-subject").removeClass("wdt-1280");
-      $(".video-list, .video-subject").addClass("wdt-1070");
-      $(".video-wrap:nth-child(6)").addClass("d-xl-none");
-      $(".video-list > .col-md-2").removeClass("mr-0");
-    }
-  });
+  if ($(window).width() < 1389) {
+    $(".burger-button").click(function() {
+      $(".side-nav-slide").toggleClass("show");
+    });
+  }
 });
