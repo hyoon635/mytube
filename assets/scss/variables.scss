@@ -334,7 +334,7 @@ p {
 }
 
 .overlay {
-    display: none;
+    display: block;
     position: fixed;
 
     /* full screen */
@@ -350,10 +350,4 @@ p {
 
     /* animate the transition */
     transition: all 0.5s ease-in-out;
-}
-
-/* display .overlay when it has the .active class */
-.overlay.active {
-    display: block;
-    opacity: 1;
 }

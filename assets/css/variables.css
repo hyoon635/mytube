@@ -149,7 +149,7 @@ p {
   grid-column-start: 2; }
 
 .overlay {
-  display: none;
+  display: block;
   position: fixed;
   /* full screen */
   width: 100vw;
@@ -161,8 +161,3 @@ p {
   opacity: 0;
   /* animate the transition */
   transition: all 0.5s ease-in-out; }
-
-/* display .overlay when it has the .active class */
-.overlay.active {
-  display: block;
-  opacity: 1; }

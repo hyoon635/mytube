@@ -42,7 +42,7 @@ $(document).ready(function() {
   }
 
   if ($(window).width() < 1389) {
-    $(".burger-button").click(function() {
+    $(".burger-button, .overlay").click(function() {
       $(".side-nav-slide").toggleClass("show");
     });
   }
