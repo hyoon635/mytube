@@ -11,11 +11,13 @@ $(document).ready(function() {
   var VideoList = "";
   for (var i = 0; i < Video.length; i++) {
     VideoList +=
-      '<div class="video-wrap col-xl-2 col-lg-2 col-md-2 col-sm-2"><a href="#"> <img src="' +
+      '<div class="video-wrap col-xl-2 col-lg-2 col-md-2 col-sm-2 video-wrap"><a href="#"><img src="' +
       Video[i].img +
-      '" alt="video" class="video-img"><a href="#" class="clock"><i class="fas fa-clock"></i></a><span class="time">1:24:39</span><p>Wanderlust 🌲 - An Indie/Folk/Pop Playlist</p><span>alexrainbridMusic<i class="fas fa-check-circle"></i></span><span>조회수 16만회 ・ 3주전</span></a></div>';
+      '" alt="video" class="video-img"><img src="' +
+      Video[i].img2 +
+      '" alt="video" class="video-img2"><button type="button" class="clock" data-toggle="modal" data-target="#clock-modal"><i class="fas fa-clock"></i></button><span class="time">1:24:39</span><p>Wanderlust 🌲 - An Indie/Folk/Pop Playlist</p><span>alexrainbridMusic<i class="fas fa-check-circle"></i></span><span>조회수 16만회 ・ 3주전</span></a></div>';
   }
-  //$(".video-list").html(VideoList);
+  $(".video-list").html(VideoList);
 
   $(".video-wrap:nth-child(6)").addClass("d-xl-none");
 

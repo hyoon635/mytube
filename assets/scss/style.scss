@@ -478,6 +478,12 @@ body {
                     border-bottom: 2px solid #eee;
 
                     .video-wrap {
+                        &:hover {
+                            .video-img2, .clock {
+                                visibility: visible;
+                            }
+                        }
+
                         &.col-md-2 {
                             padding: 0;
                             margin-right: 35px;
@@ -489,6 +495,12 @@ body {
 
                             img {
                                 width: 210px;
+
+                                &.video-img2 {
+                                    position: absolute;
+                                    left: 0;
+                                    visibility: hidden;
+                                }
                             }
 
                             p {
@@ -501,7 +513,7 @@ body {
 
                             button {
                                 &.clock {
-                                    //visibility: hidden;
+                                    visibility: hidden;
                                     width: 25px;
                                     height: 25px;
                                     position: absolute;
