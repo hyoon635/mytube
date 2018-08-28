@@ -13,9 +13,9 @@ $(document).ready(function() {
     VideoList +=
       '<div class="video-wrap col-xl-2 col-lg-2 col-md-2 col-sm-2"><a href="#"> <img src="' +
       Video[i].img +
-      '" alt="video" class="video-img"><span class="time">1:24:39</span><p>Wanderlust 🌲 - An Indie/Folk/Pop Playlist</p><span>alexrainbridMusic<i class="fas fa-check-circle"></i></span><span>조회수 16만회 ・ 3주전</span></a></div>';
+      '" alt="video" class="video-img"><a href="#" class="clock"><i class="fas fa-clock"></i></a><span class="time">1:24:39</span><p>Wanderlust 🌲 - An Indie/Folk/Pop Playlist</p><span>alexrainbridMusic<i class="fas fa-check-circle"></i></span><span>조회수 16만회 ・ 3주전</span></a></div>';
   }
-  $(".video-list").html(VideoList);
+  //$(".video-list").html(VideoList);
 
   $(".video-wrap:nth-child(6)").addClass("d-xl-none");
 
@@ -25,31 +25,33 @@ $(document).ready(function() {
       $(".side-nav").toggleClass("hide");
 
       if ($(".side-nav").hasClass("hide")) {
-        $("main").addClass("grid-c-start-1");
+        $("main").toggleClass("grid-c-start-1");
+        //$("side-nav-slide").add();
         $("main").removeClass("grid-c-start-2");
         $(".video-wrap:nth-child(5), .video-wrap:nth-child(6)").removeClass(
           "d-xl-none"
         );
-        $(".video-list, .video-subject").addClass("wdt-1280");
-        $(".video-list > .col-md-2").addClass("mr-0");
+        $(".video-list, .video-subject").toggleClass("wdt-1280");
+        $(".video-list > .col-md-2").toggleClass("mr-0");
       } else {
         $("main").removeClass("grid-c-start-1");
+        //$("side-nav-slide").remove();
         $("main").addClass("grid-c-start-2");
         $(".video-list, .video-subject").removeClass("wdt-1280");
-        $(".video-list, .video-subject").addClass("wdt-1070");
-        $(".video-wrap:nth-child(6)").addClass("d-xl-none");
+        $(".video-wrap:nth-child(6)").toggleClass("d-xl-none");
         $(".video-list > .col-md-2").removeClass("mr-0");
       }
     });
   }
 
   if ($(window).width() < 1389) {
+    $("side-nav-slide").add();
+    $("main").removeClass("grid-c-start-2");
     $(".burger-button").click(function() {
       $(".side-nav-slide").toggleClass("show");
       $(".overlay").toggleClass("show");
     });
-  }else {
-    $(".side-nav-slide").removeClass("show");
-    $(".overlay").removeClass("show");
+  } else {
+    $(".side-nav-slide, .overlay").removeClass("show");
   }
 });

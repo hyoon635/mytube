@@ -32,10 +32,6 @@
         max-width: 17%;
         margin-right: 32px; } }
 
-@media (max-width: 1276px) {
-  body .grid main section .container {
-    max-width: 1070px; } }
-
 @media (max-width: 1089px) {
   body .grid .side-nav {
     display: none; }
@@ -79,8 +75,6 @@
         max-width: 40%; } }
 
 @media (min-width: 1200px) {
-  main section:last-child {
-    display: none; }
   main section .container {
     width: 1070px; } }
 
