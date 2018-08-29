@@ -102,6 +102,7 @@ $(document).ready(function() {
       $("side-nav-slide").add();
       $("main").removeClass("grid-c-start-2");
       $(".video-list, .video-subject").removeClass("wdt-1280");
+      $(".video-list > .col-md-2").removeClass("mr-0");
       $(".burger-button").click(function() {
         $(".side-nav-slide").addClass("show");
         $(".overlay").addClass("show");
