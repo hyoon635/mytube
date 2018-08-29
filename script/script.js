@@ -22,7 +22,7 @@ $(document).ready(function() {
   $(".video-wrap:nth-child(6)").addClass("d-xl-none");
 
   //사이드바 toggle
-  if ($(window).width() > 1389) {
+  if ($(window).width() > 1277) {
     $(".burger-button").click(function() {
       $(".side-nav").toggleClass("hide");
 
@@ -46,14 +46,69 @@ $(document).ready(function() {
     });
   }
 
-  if ($(window).width() < 1389) {
+  if ($(window).width() < 1277) {
     $("side-nav-slide").add();
     $("main").removeClass("grid-c-start-2");
     $(".burger-button").click(function() {
-      $(".side-nav-slide").toggleClass("show");
-      $(".overlay").toggleClass("show");
+      $(".side-nav-slide").addClass("show");
+      $(".overlay").addClass("show");
     });
-  } else {
-    $(".side-nav-slide, .overlay").removeClass("show");
+    $(".nav-slide-button").click(function() {
+      $(".side-nav-slide").removeClass("show");
+      $(".overlay").removeClass("show");
+    });
   }
+
+  // var mql = window.matchMedia("screen and (max-width: 1276px)");
+
+  // mql.addListener(function(e) {
+  //   if (e.matches) {
+  //     console.log("모바일 화면 입니다.");
+  //   } else {
+  //     console.log("데스크탑 화면 입니다.");
+  //   }
+  // });
+
+  $(window).resize(function() {
+    var width_size = window.outerWidth;
+    console.log(width_size);
+
+    if (width_size >= 1277) {
+      console.log("데스크탑 화면 입니다.");
+      $(".burger-button").click(function() {
+        $(".side-nav").toggleClass("hide");
+
+        if ($(".side-nav").hasClass("hide")) {
+          $("main").toggleClass("grid-c-start-1");
+          //$("side-nav-slide").add();
+          $("main").removeClass("grid-c-start-2");
+          $(".video-wrap:nth-child(5), .video-wrap:nth-child(6)").removeClass(
+            "d-xl-none"
+          );
+          $(".video-list, .video-subject").toggleClass("wdt-1280");
+          $(".video-list > .col-md-2").toggleClass("mr-0");
+        } else {
+          $("main").removeClass("grid-c-start-1");
+          //$("side-nav-slide").remove();
+          $("main").addClass("grid-c-start-2");
+          $(".video-list, .video-subject").removeClass("wdt-1280");
+          $(".video-wrap:nth-child(6)").toggleClass("d-xl-none");
+          $(".video-list > .col-md-2").removeClass("mr-0");
+        }
+        $(".side-nav-slide, .overlay").removeClass("show");
+      });
+    } else {
+      console.log("모바일 화면 입니다.");
+      $("side-nav-slide").add();
+      $("main").removeClass("grid-c-start-2");
+      $(".burger-button").click(function() {
+        $(".side-nav-slide").addClass("show");
+        $(".overlay").addClass("show");
+      });
+      $(".nav-slide-button").click(function() {
+        $(".side-nav-slide").removeClass("show");
+        $(".overlay").removeClass("show");
+      });
+    }
+  });
 });

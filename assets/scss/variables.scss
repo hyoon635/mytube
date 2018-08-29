@@ -30,17 +30,16 @@
             main {
                 section {
                     .container {
-                        max-width: 855px;
+                        max-width: 1070px;
 
                         .video-wrap {
-                            &:nth-child(5),
                             &:nth-child(6) {
                                 display: none;
                             }
 
                             &.col-xl-2 {
-                                max-width: 21%;
-                                margin-right: 34px;
+                                max-width: 17%;
+                                margin-right: 32px;
                             }
                         }
                     }
@@ -62,7 +61,7 @@
 
                 section {
                     .container {
-                        max-width: 1280px;
+                        max-width: 1070px;
 
                         .video-wrap {
                             &:nth-child(5) {
