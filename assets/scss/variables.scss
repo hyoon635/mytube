@@ -57,7 +57,6 @@
             }
 
             main {
-                grid-column-start: 1;
 
                 section {
                     .container {
@@ -92,7 +91,6 @@
             }
 
             main {
-                grid-column-start: 1;
 
                 section {
                     .container {
@@ -124,7 +122,6 @@
             }
 
             main {
-                grid-column-start: 1;
 
                 section {
                     .container {
@@ -171,7 +168,6 @@
             }
 
             main {
-                grid-column-start: 1;
 
                 section {
                     .container {
@@ -200,9 +196,6 @@
 @media (min-width: 1200px) {
     main {
         section {
-            // &:last-child {
-            //     display: none;
-            // }
 
             .container {
                 width: 1070px;
@@ -320,15 +313,8 @@ p {
     width: 1070px;
 }
 
-.grid-c-start-1 {
-    grid-column-start: 1 !important;
-}
-
-.grid-c-start-2 {
-    grid-column-start: 2 !important;
-}
-
 .overlay {
+    position: absolute;
     display: none;
     width: 100vw;
     height: 100vh;
