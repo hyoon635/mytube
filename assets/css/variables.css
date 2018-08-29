@@ -72,7 +72,7 @@
 
 @media (min-width: 992px) {
   body .grid nav.navbar-expand-lg .navbar-toggler {
-    //display: unset; }
+    display: inline-block; }
   body .grid nav form.my-auto {
     width: 45% !important; } }
 
