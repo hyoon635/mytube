@@ -1,3 +1,7 @@
+var processorsArray = [
+  require("autoprefixer")({ grid: true, browsers: [">1%"] })
+];
+
 $(document).ready(function() {
   var Video = [
     { img: "assets/img/video1.jpg", img2: "assets/img/video2.jpg" },
