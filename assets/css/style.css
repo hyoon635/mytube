@@ -159,6 +159,8 @@ body {
       border-bottom: 1px solid #eee;
       margin-left: 15px;
       margin-bottom: 10px; }
+      body .grid .header-section h6 {
+        display: none; }
       body .grid .header-section .navbar-brand {
         margin-left: 5px; }
     body .grid .side-nav, body .grid .side-nav-slide {
@@ -204,6 +206,7 @@ body {
         display: none; }
       body .grid .side-nav section.subscribe-section img, body .grid .side-nav-slide section.subscribe-section img {
         width: 80px;
+        height: 24px;
         border-radius: 50%;
         padding: 0 28px; }
       body .grid .side-nav footer, body .grid .side-nav-slide footer {
@@ -273,6 +276,7 @@ body {
           padding: 0;
           margin-right: 35px; }
         body .grid main section .video-list .video-wrap a {
+          color: #000;
           position: relative;
           display: inline-block; }
           body .grid main section .video-list .video-wrap a img {

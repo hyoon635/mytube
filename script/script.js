@@ -101,6 +101,7 @@ $(document).ready(function() {
       console.log("모바일 화면 입니다.");
       $("side-nav-slide").add();
       $("main").removeClass("grid-c-start-2");
+      $(".video-list, .video-subject").removeClass("wdt-1280");
       $(".burger-button").click(function() {
         $(".side-nav-slide").addClass("show");
         $(".overlay").addClass("show");
